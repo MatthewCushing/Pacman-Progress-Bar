@@ -1,6 +1,6 @@
-#include "ProgressBar.h"
+#include "PacmanProgressBar.h"
 
-void Progressbar(std::uint32_t index, std::uint32_t totalIterations) {
+void progressBar(std::uint32_t index, std::uint32_t totalIterations) {
   std::uint32_t percentage{0};
 
   percentage = (std::uint32_t)(
