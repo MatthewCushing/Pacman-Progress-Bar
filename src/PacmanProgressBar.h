@@ -1,3 +1,9 @@
+/**
+ * Created by Matthew Cushing
+ * Under the MIT License
+ * Free to use and manipulate in whatever way you like!
+ */
+
 #ifndef __PROGRESSBAR
 #define __PROGRESSBAR
 

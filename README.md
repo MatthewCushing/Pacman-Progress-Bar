@@ -4,20 +4,19 @@ This is a simple Progress Bar that I wrote that you can use in your C++ software
 
 1. Clone this repo
 2. Take the header and implementation file and put it wherever you like in your software
-3. `#include "ProgressBar.h`
-4. Call the ProgressBar function inside of your program
+3. `#include "PacmanProgressBar.h`
+4. Call the `progressBar` function inside of your program
 5. There are only two parameters that both hold a `uint32_t`
 
 The first parameter is the index. Most likely you will be putting this in a loop and so your `i` variable will be the index in your for loop.  The second parameter is the total number of iterations.  So if you are iterating through an array, it would be the total length of the array.
 
 Example:
 ```cpp
-#include <iostream>
+#include "PacmanProgressBar.h"
 #include <array>
-#include "ProgressBar.h"
 
 int main() {
-    std::array<int> myArray[200000];
+    std::array<int> myArray[2000000];
 
     for (size_t i{0}; i < myArray.size(); ++i) {
         myArray[i] = i;
@@ -26,4 +25,4 @@ int main() {
 }
 ```
 
-That's it.  Really simple and basic.  You can obviously use this in more complex applications and may find uses for it other than a loop.
+That's it.  Really simple and basic.  You can obviously use this in more complex applications and most likely find uses for it other than a loop.  I use it in all my testing applications at work.
